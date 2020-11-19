@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+}
+
+
+.profile img {
+    width: 320px;
+    height: 180px;
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    height: 100%;
+  }

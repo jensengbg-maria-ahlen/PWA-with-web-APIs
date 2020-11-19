@@ -9,11 +9,35 @@
     <link rel="shortcut icon" href="img/192.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/192.png">
     <script src="script/index.js" charset="UTF-8"></script>
+    <script defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDMtiH2vyYxj4oNYvphoi8cMdT5M1-9DJg"></script>
     <title>PWA with web API</title>
 </head>
 <body>
     <main>
-        <h1>Progressive Web App</h1>
+        <header>
+            <h1>Progressive Web App</h1>
+        </header>
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <h3>Maria Åhlén</h3>
+            <img src="" alt="Profile Picture" class="hidden" id="profilePicture">
+        </section>
+
+        <section class="video">
+            <button class="startStream">Start video</button>
+            <button class="stopStream" disabled>Stop video</button>
+            <p class="errorMessage"></p>
+            <video src="" autoplay poster="" controls></video>
+            <button class="takePicture" disabled>Take picture</button>
+        </section>
+
+        <section class="location">
+            <h4>Where am I?</h4>
+            <button id="locationButton">Find my location</button>
+            <p class="position"></p>
+            <div class="map"></div>
+        </section>
     </main>
     
 </body>
