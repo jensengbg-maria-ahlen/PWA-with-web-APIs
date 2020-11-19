@@ -93,7 +93,7 @@ function locationSettings() {
                 let lng = pos.coords.longitude;
                 position.innerHTML = `You are at Latitude: ${lat}°, Longitude: ${lng}°.`;
                 getAdressFromPosition(lat, lng, position);
-                initMap(let, lng)
+                initMap(lat, lng)
             }, error => {
                 position.innerHTML = 'Please <em>allow</em> position and I will tell you where you are.';
                 console.log(error);
